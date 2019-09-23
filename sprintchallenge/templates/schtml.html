@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<body>
+	<div>
+		<h1>Records with value > 10</h2>
+		<form action="/refresh">
+			<button type="submit" value="Refresh Data">Refresh Data</button>
+		</form>
+	</div>
+	<ul>
+		{% for r in records %}
+		<li>time {{ r.datetime }}</li>
+		<li>value {{ r.value }}</li>
+		<br>
+		{% endfor %}
+	</ul>
+</body>
+</html>
